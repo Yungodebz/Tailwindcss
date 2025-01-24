@@ -6,8 +6,152 @@
     <title>Tailwindcss</title>
     <script src="https://cdn.tailwindcss.com"></script>
 </head>
-<body class="bg-gray-400">
-    <main class="bg-gray-700 py-6 px-4 sm:p-6 md:py-10 md:px-8">
+<body class="">
+  <nav class="bg-gray-700 text-white p-4 flex justify-between items-center">
+    <h1 class="text-2xl font-bold">My Portfolio</h1>
+    <svg class="hidden-sm md:hidden w-10" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6">
+      <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
+    </svg>
+    
+    <ul class="hidden md:flex gap-4">
+      <li><a href="#" class="p-4 text-2xl hover:bg-blue-400">About me</a></li>
+      <li><a href="#" class="p-4 text-2xl hover:bg-blue-400">Projects</a></li>
+      <li><a href="#" class="p-4 text-2xl hover:bg-blue-400">Contacts</a></li>
+    </ul>
+  </nav>
+
+  <section>
+  <figure class="flex flex-col items-center text-center mt-10">
+    <img class="rounded-xl" src="./img/beach-house.jpg" alt="images" width="30%">
+     <div class="">
+      <figcaption>
+        <div class="text-3xl font-semibold pt-3">Favour Odebe</div>
+        <div class="text-base text-gray-600">Axia Africa Student of Cohort 7</div>
+      </figcaption>
+     </div>
+  </figure>
+  </section>
+
+  <section class="bg-gray-200 pt-5">
+      <div class="px-20">
+      <h2 class="text-2xl font-bold text-center underline">About Me</h2>
+    <p class="text-center">I am a beginner in web development,
+       but with the opportunity given to me by Axia Africa i am passionate and i hope to be a professional web developer.</p>
+
+    <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-4 pb-5 pt-5">
+      <div class="bg-blue-400 font-medium p-4 rounded-lg shadow-lg">HTML</div>
+      <div class="bg-blue-400 font-medium p-4 rounded-lg shadow-lg">CSS</div>
+      <div class="bg-blue-400 font-medium p-4 rounded-lg shadow-lg">TAILWINDCSS</div>
+      <div class="bg-blue-400 font-medium p-4 rounded-lg shadow-lg">GIT & GITHUB</div>
+      <div class="bg-blue-400 font-medium p-4 rounded-lg shadow-lg">JAVASCRIPT</div>
+      <div class="bg-blue-400 font-medium p-4 rounded-lg shadow-lg">REACT</div>
+    </div>
+    </div>
+</section>
+
+<section class="bg-gray-300  p-4 ">
+  <div class="grid sm:grid-cols-3 lg:grid-cols-3 ml-[90px] items-center">
+  <h1 class="text-8xl font-bold text-center underline  p-4">Project</h1>
+  <svg class="hidden md:flex w-[80px] ml-[150px] mt-[25px]" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="size-6">
+    <path fill-rule="evenodd" d="M13.28 11.47a.75.75 0 0 1 0 1.06l-7.5 7.5a.75.75 0 0 1-1.06-1.06L11.69 12 4.72 5.03a.75.75 0 0 1 1.06-1.06l7.5 7.5Z" clip-rule="evenodd" />
+    <path fill-rule="evenodd" d="M19.28 11.47a.75.75 0 0 1 0 1.06l-7.5 7.5a.75.75 0 1 1-1.06-1.06L17.69 12l-6.97-6.97a.75.75 0 0 1 1.06-1.06l7.5 7.5Z" clip-rule="evenodd" />
+  </svg>
+  
+ 
+  <div class="p-4">
+  <h2 class=" text-lg underline font-bold pt-1 pb-5 ">Project Details</h2> 
+  <div class="flex  bg-blue-400 font-medium p-4 rounded-lg ">
+  <p class="text-lg font-bold text-sm pt-0.5">Goal:</p><p class="pt-0.5 ml-1">Design a responsive website for Axia Africa.</p>
+   
+   
+  <p class="text-lg font-bold text-sm justify-between items-center pt-0.5">Description:</p><p class="pt-1 ml-1">"A responsive website for Axia Africa, providing access to tech skills training, resources,
+     and community support for Africans and beyond."</p>
+   </div>
+
+<h1 class="underline text-base font-bold italic pb-3">Project Features</h1>
+<ul class=" bg-blue-400 font-medium p-4 rounded-lg ">
+<li>Responsive design for desktop, tablet, and mobile devices</li>
+<li>Accessible UI for users with disabilities</li>
+<li>Interactive elements for enhanced user engagement</li>
+</ul>
+
+<h1  class="underline text-base font-bold italic pb-3">Project Structure</h1>
+<ul class=" bg-blue-400 font-medium p-4 rounded-lg ">
+<li>Organized file structure for easy maintenance</li>
+<li>Modular code for scalability and reusability</li>
+<li>Consistent naming conventions for clarity</li>
+</ul>
+</div>
+</div>
+</section>
+
+<section class="bg-gray-400">
+  <h2 class="text-2xl font-bold underline text-center pt-5">Contacts</h2>
+  <div class="max-w-md mx-auto mt-10 bg-black text-white p-8 border border-gray-300 rounded-lg border-none">
+		<h1 class="text-2xl font-bold mb-4">Contacts Info.</h1>
+		<form>
+			<div class="mb-4">
+				<label class="block text-white text-sm font-bold mb-2" for="name">Fullname:</label>
+				<input class=" border rounded w-full py-2 px-3 text-gray-700 leading-tight" id="name" name="name" type="text" placeholder="Enter your name">
+			</div>
+			<div class="mb-4">
+				<label class="block text-white text-sm font-bold mb-2" for="email">Email:</label>
+				<input class=" border rounded w-full py-2 px-3 text-gray-700 leading-tight" id="email" name="email" type="email" placeholder="@email.com">
+			</div>
+			<div class="mb-4">
+				<label class="block text-white text-sm font-bold mb-2" for="message">Message:</label>
+				<textarea class=" border rounded w-full py-2 px-3 text-gray-700 leading-tight" id="message" name="message"></textarea>
+			</div>
+			<div class="flex items-center justify-between">
+				<button class="w-full bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded" type="submit">Submit</button>
+			</div>
+		</form>
+	</div>
+  <footer>
+    <p class="text-2xl font-bold text-center p-4">&copy; 2024 Favour Odebe</p>
+    </footer>
+    
+</section>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+   <!-- <main class="bg-gray-700 py-6 px-4 sm:p-6 md:py-10 md:px-8">
         <div class="max-w-4xl mx-auto grid grid-cols-1 lg:max-w-5xl lg:gap-x-20 lg:grid-cols-2">
           <div class="relative p-3 col-start-1 row-start-1 flex flex-col-reverse rounded-lg bg-gradient-to-t from-black/75 via-black/0 sm:bg-none sm:row-start-2 sm:p-0 lg:row-start-1">
             <h1 class="mt-1 text-lg font-semibold text-white sm:text-slate-900 md:text-2xl dark:sm:text-white">Beach House in Collingwood</h1>
@@ -45,7 +189,7 @@
             This sunny and spacious room is for those traveling light and looking for a comfy and cosy place to lay their head for a night or two. This beach house sits in a vibrant neighborhood littered with cafes, pubs, restaurants and supermarkets and is close to all the major attractions such as Edinburgh Castle and Arthur's Seat.
           </p>
         </div>
-        </main>
+        </main> -->
 
 
 
